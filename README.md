@@ -6,8 +6,6 @@ Aplikasi ini memudahkan pengguna menampilkan semua tautan sosial medianya dalam 
 
 Aplikasi ini diinstal menggunakan **Docker** dan dideploy di server **AWS EC2** dengan konfigurasi **Cloudflare SSL (Flexible HTTPS)** agar bisa diakses publik dengan aman.
 
----
-
 ## Instalasi
 ### Prasyarat
   1. Akun **AWS** aktif (Free Tier).
@@ -49,8 +47,6 @@ Aplikasi ini diinstal menggunakan **Docker** dan dideploy di server **AWS EC2** 
   6. **Akses aplikasi**
       Buka browser → http://3.25.186.21/
       Akan muncul halaman setup admin LinkStack.
-     
-    ---
 
 ## Cara Pemakaian
 ✨ Tampilan Aplikasi
@@ -82,8 +78,6 @@ Fitur drag-drop link belum seintuitif Linktree.
 
 Perbandingan dengan Linktree
 LinkStack merupakan aplikasi web open-source yang dapat di-host secara mandiri (self-hosted), sedangkan Linktree adalah layanan komersial yang di-host oleh penyedia resminya. Dari segi biaya, LinkStack sepenuhnya gratis, sementara Linktree menggunakan model freemium, di mana fitur dasar tersedia gratis dan fitur tambahan memerlukan biaya langganan. LinkStack menawarkan fleksibilitas penuh dalam kustomisasi, termasuk pengaturan tema, CSS, dan logo, sedangkan Linktree memiliki batasan dalam hal kustomisasi tampilan. Untuk keamanan, LinkStack dapat menggunakan SSL gratis melalui Cloudflare, sementara Linktree secara otomatis menyediakan SSL bagi penggunanya.
-
----
 
 Referensi
 LinkStack Docker Official Repository
