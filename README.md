@@ -59,9 +59,9 @@ Mengganti tema tampilan halaman.
 Mengatur urutan dan ikon link.
 Mendukung kustomisasi warna, teks, dan gambar.
 
-📸 Screenshot (contoh tampilan)
+📸 Tampilan
 Halaman admin LinkStack
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/1fb58eaf-20d5-41f2-bc57-8b7b0a9cd805" />
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/3ec03cc3-3923-4e2a-803d-396dece011d9" />
 
 Halaman publik link bio dengan beberapa tautan aktif
 <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/e65e454e-4d14-41c5-9bfa-090642c073bb" />
