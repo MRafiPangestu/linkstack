@@ -66,6 +66,10 @@ Halaman admin LinkStack
 Halaman publik link bio dengan beberapa tautan aktif
 <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/e65e454e-4d14-41c5-9bfa-090642c073bb" />
 
+Halaman untuk menambahkan link sebagai user
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/a84f2edc-92a1-49bc-9495-93646297eda9" />
+
+
 
 Pembahasan
 💬 Kelebihan
