@@ -60,21 +60,28 @@ Fungsi utama:
   4. Mendukung kustomisasi warna, teks, dan gambar.
 
 📸 Tampilan
-A. Sebagai Admin
-  1. Halaman admin LinkStack
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/3ec03cc3-3923-4e2a-803d-396dece011d9" />
+  A. Sebagai Admin
+  
+    1. Halaman admin LinkStack
+  <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/3ec03cc3-3923-4e2a-803d-396dece011d9" />
 
-B. Sebagai User
-  2. Halaman publik link bio dengan beberapa tautan aktif
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/e65e454e-4d14-41c5-9bfa-090642c073bb" />
-
-  3. Halaman untuk menambahkan link
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/5094aa55-ebb9-4976-af3f-cf4cf6e02383" />
-
-
-  4. Halaman untuk memanage link yang sudah ditambahakan
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/a84f2edc-92a1-49bc-9495-93646297eda9" />
-
+  B. Sebagai User
+  
+    2. Halaman publik link bio dengan beberapa tautan aktif
+  <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/e65e454e-4d14-41c5-9bfa-090642c073bb" />
+  
+    3. Halaman untuk menambahkan link
+  <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/5094aa55-ebb9-4976-af3f-cf4cf6e02383" />
+  
+  
+    4. Halaman untuk memanage link yang sudah ditambahakan
+  <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/a84f2edc-92a1-49bc-9495-93646297eda9" />
+  
+  <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/b001adb6-9de0-4ad2-9f4b-0c7e1820f445" />
+  <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/733d968a-a801-4c8f-8400-6d33dbbe3f42" />
+  
+  
+  
 
 
 Pembahasan
