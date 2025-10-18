@@ -43,11 +43,10 @@ Aplikasi ini diinstal menggunakan **Docker** dan dideploy di server **AWS EC2** 
   
   4. **Cek container berjalan**
       sudo docker ps
+     
+      <img width="2845" height="227" alt="image" src="https://github.com/user-attachments/assets/61610334-19f3-411a-ba41-da712967cdf7" />
   
-      CONTAINER ID   IMAGE                    STATUS          PORTS
-      a5ef5bf176d8   linkstackorg/linkstack   Up 10 seconds   0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp
-  
-  5. **Akses aplikasi**
+  6. **Akses aplikasi**
       Buka browser → http://3.25.186.21/
       Akan muncul halaman setup admin LinkStack.
      
