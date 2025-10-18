@@ -54,10 +54,10 @@ Setelah setup selesai, pengguna dapat login ke dashboard:
 http://3.25.186.21/
 
 Fungsi utama:
-Membuat profil dan tautan seperti Instagram, YouTube, GitHub, dll.
-Mengganti tema tampilan halaman.
-Mengatur urutan dan ikon link.
-Mendukung kustomisasi warna, teks, dan gambar.
+  1. Membuat profil dan tautan seperti Instagram, YouTube, GitHub, dll.
+  2. Mengganti tema tampilan halaman.
+  3. Mengatur urutan dan ikon link.
+  4. Mendukung kustomisasi warna, teks, dan gambar.
 
 📸 Tampilan
 Halaman admin LinkStack
@@ -69,22 +69,22 @@ Halaman publik link bio dengan beberapa tautan aktif
 
 Pembahasan
 💬 Kelebihan
-Instalasi mudah dengan Docker.
-Bisa di-host sendiri (kontrol penuh atas data).
-Desain modern dan ringan.
-Gratis & open source.
-Dapat diintegrasikan dengan domain custom.
+  1. Instalasi mudah dengan Docker.
+  2. Bisa di-host sendiri (kontrol penuh atas data).
+  3. Desain modern dan ringan.
+  4. Gratis & open source.
+  5. Dapat diintegrasikan dengan domain custom.
 
 ⚠️ Kekurangan
-Tidak ada analitik bawaan (perlu plugin tambahan).
-Fitur drag-drop link belum seintuitif Linktree.
+  1. Tidak ada analitik bawaan (perlu plugin tambahan).
+  2. Fitur drag-drop link belum seintuitif Linktree.
 
 Perbandingan dengan Linktree
 LinkStack merupakan aplikasi web open-source yang dapat di-host secara mandiri (self-hosted), sedangkan Linktree adalah layanan komersial yang di-host oleh penyedia resminya. Dari segi biaya, LinkStack sepenuhnya gratis, sementara Linktree menggunakan model freemium, di mana fitur dasar tersedia gratis dan fitur tambahan memerlukan biaya langganan. LinkStack menawarkan fleksibilitas penuh dalam kustomisasi, termasuk pengaturan tema, CSS, dan logo, sedangkan Linktree memiliki batasan dalam hal kustomisasi tampilan. Untuk keamanan, LinkStack dapat menggunakan SSL gratis melalui Cloudflare, sementara Linktree secara otomatis menyediakan SSL bagi penggunanya.
 
 Referensi
-LinkStack Docker Official Repository
-LinkStack Documentation
-AWS EC2 Documentation
-Cloudflare SSL Guide
-Docker Hub - linkstackorg/linkstack
+  1. LinkStack Docker Official Repository
+  2. LinkStack Documentation
+  3. AWS EC2 Documentation
+  4. Cloudflare SSL Guide
+  5. Docker Hub - linkstackorg/linkstack
