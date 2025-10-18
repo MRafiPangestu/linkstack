@@ -1,44 +1,94 @@
-# Proyek Akhir: Instalasi LinkStack
+# Aplikasi Web "LinkStack"
 
-## 1. Identitas
-- **Nama:** Muhammad Rafi' Pangestu  
-- **Aplikasi:** LinkStack  
-- **Kategori:** Link management  
-- **Hosting:** Render.com  
-- **Sumber:** [LinkStack GitHub](https://github.com/LinkStackOrg/LinkStack)
+## Sekilas Tentang
+**LinkStack** adalah aplikasi web open-source untuk membuat halaman profil berisi kumpulan tautan (link bio), mirip seperti **Linktree**.  
+Aplikasi ini memudahkan pengguna menampilkan semua tautan sosial medianya dalam satu halaman yang menarik, dapat di-hosting secara mandiri (*self-hosted*), dan dapat dikustomisasi penuh.
 
-## 2. Tujuan
-Melakukan instalasi dan deployment aplikasi LinkStack di platform hosting gratis agar dapat diakses secara publik.
+Aplikasi ini diinstal menggunakan **Docker** dan dideploy di server **AWS EC2** dengan konfigurasi **Cloudflare SSL (Flexible HTTPS)** agar bisa diakses publik dengan aman.
 
-## 3. Deskripsi Aplikasi
-**LinkStack** adalah aplikasi open-source yang berfungsi sebagai alternatif dari **Linktree**.  
-Dengan LinkStack, pengguna dapat membuat halaman berisi tautan ke berbagai platform sosial mereka.
+---
 
-## 4. Tutorial Instalasi di Hosting
-1. Buka [Render.com](https://render.com) dan login menggunakan akun GitHub.
-2. Klik **New Web Service**.
-3. Pilih repo: `https://github.com/LinkStackOrg/LinkStack`.
-4. Pilih Environment = **Docker**.
-5. Klik **Deploy Web Service**.
-6. Tunggu hingga status **Live**.
-7. Akses aplikasi di URL yang diberikan, misal `https://linkstack-rafi.onrender.com`.
+## Instalasi
+### Prasyarat
+  1. Akun **AWS** aktif (Free Tier).
+  2. Membuat **Instance EC2** dengan spesifikasi:
+     - OS: Ubuntu Server 22.04 LTS  
+     - Instance type: `t3.micro`
+     - Storage: 8 GB (default)
+     - Security Group:
+       - Port 22 (SSH)
+       - Port 80 (HTTP)
+       - Port 443 (HTTPS)
+  3. Akses SSH key pair (`.pem`) dari AWS.
 
-## 5. Hasil
-Aplikasi dapat diakses di internet melalui URL:  
-👉 [https://linkstack-rafi.onrender.com](https://linkstack-rafi.onrender.com)
+### ⚙️ Langkah Instalasi di AWS EC2
+  1. **Masuk ke server via SSH**
+     ```bash
+     ssh -i "linkstack-key.pem" ubuntu@<PUBLIC_IP_EC2>
+  2. **Update & install Docker**
+      sudo apt update
+      sudo apt install docker.io -y
+      sudo systemctl start docker
+      sudo systemctl enable docker
+  
+  3. **Buat Docker volume dan jalankan LinkStack**
+      sudo docker volume create linkstack
+      sudo docker run --detach \
+          --name linkstack \
+          --publish 80:80 \
+          --publish 443:443 \
+          --restart unless-stopped \
+          --mount source=linkstack,target=/htdocs \
+          linkstackorg/linkstack
+  
+  4. **Cek container berjalan**
+      sudo docker ps
+  
+      CONTAINER ID   IMAGE                    STATUS          PORTS
+      a5ef5bf176d8   linkstackorg/linkstack   Up 10 seconds   0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp
+  
+  5. **Akses aplikasi**
+      Buka browser → http://3.25.186.21/
+      Akan muncul halaman setup admin LinkStack.
+     
+    ---
 
-## 6. Bandingkan dengan Aplikasi Sejenis
-| Fitur | LinkStack | Linktree |
-|-------|------------|-----------|
-| Open Source | ✅ Ya | ❌ Tidak |
-| Gratis | ✅ Ya | ⚠️ Sebagian |
-| Custom Domain | ✅ Ya | ✅ Ya |
-| Hosting Sendiri | ✅ Ya | ❌ Tidak |
-| Tema Custom | ✅ Banyak | ⚠️ Terbatas |
+## Cara Pemakaian
+✨ Tampilan Aplikasi
+Setelah setup selesai, pengguna dapat login ke dashboard:
+http://3.25.186.21/
 
-## 7. Kesimpulan
-LinkStack merupakan alternatif gratis dan open-source dari Linktree yang mudah di-deploy, ringan, serta dapat dikustomisasi penuh.
+Fungsi utama:
+Membuat profil dan tautan seperti Instagram, YouTube, GitHub, dll.
+Mengganti tema tampilan halaman.
+Mengatur urutan dan ikon link.
+Mendukung kustomisasi warna, teks, dan gambar.
 
-## 8. Referensi
-- https://github.com/LinkStackOrg/LinkStack
-- https://render.com/docs/deploy-docker
+📸 Screenshot (contoh tampilan)
+Halaman admin LinkStack
+Halaman publik link bio dengan beberapa tautan aktif
+(sertakan screenshot hasil deploy di laporan final)
+
+Pembahasan
+💬 Kelebihan
+Instalasi mudah dengan Docker.
+Bisa di-host sendiri (kontrol penuh atas data).
+Desain modern dan ringan.
+Gratis & open source.
+Dapat diintegrasikan dengan domain custom.
+
+⚠️ Kekurangan
+Tidak ada analitik bawaan (perlu plugin tambahan).
+Fitur drag-drop link belum seintuitif Linktree.
+
+Perbandingan dengan Linktree
+LinkStack merupakan aplikasi web open-source yang dapat di-host secara mandiri (self-hosted), sedangkan Linktree adalah layanan komersial yang di-host oleh penyedia resminya. Dari segi biaya, LinkStack sepenuhnya gratis, sementara Linktree menggunakan model freemium, di mana fitur dasar tersedia gratis dan fitur tambahan memerlukan biaya langganan. LinkStack menawarkan fleksibilitas penuh dalam kustomisasi, termasuk pengaturan tema, CSS, dan logo, sedangkan Linktree memiliki batasan dalam hal kustomisasi tampilan. Untuk keamanan, LinkStack dapat menggunakan SSL gratis melalui Cloudflare, sementara Linktree secara otomatis menyediakan SSL bagi penggunanya.
+
+---
+
+Referensi
+LinkStack Docker Official Repository
+LinkStack Documentation
+AWS EC2 Documentation
+Cloudflare SSL Guide
+Docker Hub - linkstackorg/linkstack
