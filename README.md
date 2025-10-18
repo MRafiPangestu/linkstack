@@ -60,9 +60,11 @@ Fungsi utama:
   4. Mendukung kustomisasi warna, teks, dan gambar.
 
 📸 Tampilan
+A. Sebagai Admin
   1. Halaman admin LinkStack
 <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/3ec03cc3-3923-4e2a-803d-396dece011d9" />
 
+B. Sebagai User
   2. Halaman publik link bio dengan beberapa tautan aktif
 <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/e65e454e-4d14-41c5-9bfa-090642c073bb" />
 
