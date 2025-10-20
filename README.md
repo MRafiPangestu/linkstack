@@ -60,10 +60,37 @@ Fungsi utama:
   4. Mendukung kustomisasi warna, teks, dan gambar.
 
 📸 Tampilan
+
   A. Sebagai Admin
   
     1. Halaman admin LinkStack
   <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/3ec03cc3-3923-4e2a-803d-396dece011d9" />
+
+    2.Untuk menambahkan blok tautan baru ke halaman utama LinkStack
+  <img width="2827" height="1507" alt="image" src="https://github.com/user-attachments/assets/31eb22c8-815e-4618-9ac7-5967507ee189" />
+
+    3. tempat admin bisa mengatur perilaku sistem, keamanan, hingga backup.
+  <img width="2824" height="1542" alt="image" src="https://github.com/user-attachments/assets/cd629778-c3e3-4634-ac5c-ddc6b6d67f8e" />
+
+    4. Membantu user untuk memperbaiki akun atau profile tanpa password
+<img width="2838" height="1447" alt="image" src="https://github.com/user-attachments/assets/572d8830-52c0-42fe-b747-ea8b79eae922" />
+
+    5. Menambah kredibilitas dan informasi tambahan di halaman publik LinkStack.
+<img width="2829" height="1589" alt="image" src="https://github.com/user-attachments/assets/0ef8a44d-0286-4ab7-9038-50c7468f21c1" />
+
+    6. Menyesuaikan tampilan umum aplikasi
+<img width="2823" height="1557" alt="image" src="https://github.com/user-attachments/assets/4bb5a3ac-e617-4d2f-9631-b6ae510a2a07" />
+
+    7. Melihat dan mengatur semua link yang sudah dibuat sebelumnya (bisa edit , hapus atau ubah urutan link)
+<img width="2820" height="1616" alt="image" src="https://github.com/user-attachments/assets/9ea73cde-67f9-4600-927b-60faf904e4f8" />
+
+    8. Mengatur konten profil user
+<img width="2842" height="1625" alt="image" src="https://github.com/user-attachments/assets/97bf53ac-3a49-4c5e-a0c7-a63b05fafd5a" />
+
+    9. Mengubah tema tampilan halaman publik
+<img width="2841" height="1590" alt="image" src="https://github.com/user-attachments/assets/f7b8a03b-775c-4d1a-88e0-cb2d2b0bc962" />
+
+
 
   B. Sebagai User
   
